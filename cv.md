@@ -16,6 +16,12 @@ RS School Discord: Igor Asessorov (@bumble-sakh)
 
 ---
 
+## About me
+
+During my life, I have tried many different areas of work. I worked as a video surveillance operator, sold plumbing fixtures, was the manager of a small business center, and was engaged in the advertising business. But I have always been interested in IT. I tried different courses and stumbled upon RS-School by accident. I want to get the maximum knowledge and experience from this course. I am focused on achieving results and developing my skills and abilities. And I want to finally try myself in front-end development.
+
+---
+
 ## Skills
 
 - HTML
