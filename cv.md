@@ -1,3 +1,5 @@
+![My photo](photo.jpg)
+
 # Igor Asessorov
 
 ## Contact information:
