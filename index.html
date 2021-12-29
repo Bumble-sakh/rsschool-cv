@@ -161,6 +161,45 @@
             </ul>
           </div>
         </section>
+
+        <section class="code" id="code">
+          <div class="code-container code-spoiler-close">
+            <h2 class="code-title">Code example</h2>
+            <i class="uil uil-angle-down" id="code-spoiler"></i>
+            <div class="code-description">
+              <pre>
+                <code>
+    function customHttp() {
+      return {
+        get(url, cb) {
+          try {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', url);
+            xhr.send();
+
+            xhr.addEventListener('load', () => {
+              if(Math.floor(xhr.status / 100) !== 2) {
+                cb(`Error. Status code: ${xhr.status}`, xhr);
+                return ;
+              }
+              const response = JSON.parse(xhr.responseText);
+              cb(null, response);
+            });
+
+            xhr.addEventListener('error', () => {
+              cb(`Error. Status code: ${xhr.status}`, xhr);
+            });
+          } catch (error) {
+            cb(`Error. ${error}`);
+          }
+        },
+      }
+    }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 
