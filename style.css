@@ -26,6 +26,33 @@ body.dark-theme {
   --footer-color: #100e1b;
 }
 
+.swiper {
+  width: 100%;
+  margin-left: 0;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-img {
+  /* width: 50%; */
+  margin: 0 4rem;
+  border: 1px solid var(--footer-link);
+  border-radius: 0.5rem;
+}
+
+.slide-info {
+  margin: 0 4rem;
+}
+
+.slide-info li {
+  margin: 1rem 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -397,6 +424,12 @@ section {
   }
   .header-logo {
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .swiper-slide {
+    flex-wrap: wrap;
   }
 }
 

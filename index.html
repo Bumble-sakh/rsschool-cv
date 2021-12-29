@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Igor Asessorov</title>
   </head>
@@ -214,7 +218,111 @@
         <section class="experience" id="experiance">
           <div class="experience-container">
             <h2 class="experience-title">Experience</h2>
-            <div class="experience-description"></div>
+            <div class="experience-description">
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="/assets/img/projects/avia.png"
+                        alt="Avia Tickets App Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">Avia Tickets App</h2>
+                      <p class="slide-subtitle">
+                        HTML, CSS, JS, Bootstrap, API
+                      </p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://bumble-sakh.github.io/Training-Avia-Tickets/dist/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/Training-Avia-Tickets"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="/assets/img/projects/news.png"
+                        alt="News App Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">News App</h2>
+                      <p class="slide-subtitle">
+                        HTML, CSS, JS, Bootstrap, API
+                      </p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://bumble-sakh.github.io/Training-News-App/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/Training-News-App"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="/assets/img/projects/todo.png"
+                        alt="ToDo App Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">ToDo App</h2>
+                      <p class="slide-subtitle">HTML, CSS, JS</p>
+                      <ul>
+                        <li>
+                          <a href="https://bumble-sakh.github.io/JS-ToDoList/">
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/Bumble-sakh/JS-ToDoList">
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -306,6 +414,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
