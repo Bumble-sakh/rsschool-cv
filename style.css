@@ -1,0 +1,27 @@
+:root {
+  --main-color: #566ee1;
+  --main-color-alt: #415acc;
+  --main-color-light: #ffffff;
+  --title-color: #1e1f24;
+  --text-color: #6a6d7d;
+  --text-color-light: #a0a2af;
+  --pre-color: #eff0fc;
+  --body-color: #fbfbfe;
+  --container-color: #ffffff;
+  --card-color: #566ee1;
+  --footer-color: #6e57e0;
+  --footer-link: #c1b6fc;
+
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body.dark-theme {
+  --title-color: #f2f1f3;
+  --text-color: #bcbac4;
+  --input-color: #211d35;
+  --pre-color: #211d35;
+  --body-color: #191627;
+  --container-color: #211d35;
+  --card-color: #f2f1f3;
+  --footer-color: #100e1b;
+}
