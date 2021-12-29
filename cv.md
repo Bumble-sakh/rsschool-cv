@@ -1,4 +1,4 @@
-![My photo](photo.jpg)
+![My photo](assets/img/photo.png)
 
 # Igor Asessorov
 
