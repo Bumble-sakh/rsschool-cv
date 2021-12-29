@@ -267,6 +267,7 @@ section {
 .about-img img {
   width: 100%;
   border-radius: 1rem;
+  box-shadow: -5px -5px 5px -5px var(--footer-link);
 }
 
 .about-blob {
