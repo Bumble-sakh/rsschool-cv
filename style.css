@@ -382,7 +382,7 @@ section {
 .footer-info {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 50%;
 }
 
 .footer-container h2,
@@ -400,6 +400,11 @@ section {
 .footer-title,
 .rsschool {
   margin: 1rem;
+  width: 40%;
+}
+
+.rsschool img {
+  width: 100%;
 }
 
 .footer-copy {
