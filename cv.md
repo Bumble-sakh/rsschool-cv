@@ -118,6 +118,8 @@ During my life, I have tried many different areas of work. I worked as a video s
 
 - [Udemy: Modern javascript from beginning](https://www.udemy.com/course/modern-javascript-from-beginning)
 
+- [RS School: JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/)
+
 ---
 
 ## Language skills
