@@ -1,4 +1,4 @@
-![My photo](photo.jpg)
+![My photo](assets/img/photo.png)
 
 # Igor Asessorov
 
@@ -65,22 +65,50 @@ During my life, I have tried many different areas of work. I worked as a video s
 
 ## Experience
 
-- ### Avia Tickets App (HTML, CSS, JS, Bootstrap, API)
+- ### Avia Tickets app (HTML, CSS, JS, Bootstrap, API)
 
   - [Deploy](https://bumble-sakh.github.io/Training-Avia-Tickets/dist/)
-
   - [GitHub](https://github.com/Bumble-sakh/Training-Avia-Tickets)
 
-- ### News App (HTML, CSS, JS, Bootstrap, API)
+- ### News app (HTML, CSS, JS, Bootstrap, API)
 
   - [Deploy](https://bumble-sakh.github.io/Training-News-App/)
   - [GitHub](https://github.com/Bumble-sakh/Training-News-App)
 
-- ### ToDo Project (HTML, CSS, JS)
+- ### ToDo app (HTML, CSS, JS)
 
   - [Deploy](https://bumble-sakh.github.io/JS-ToDoList/)
-
   - [GitHub](https://github.com/Bumble-sakh/JS-ToDoList)
+
+- ### Eco sounds app (HTML, CSS, JS)
+
+  - [Deploy](https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/eco-sounds/)
+  - [GitHub](https://github.com/Bumble-sakh/RS2022PRE/tree/eco-sounds)
+
+- ### Audio player app (HTML, CSS, JS)
+
+  - [Deploy](https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/audio-player/)
+  - [GitHub](https://github.com/Bumble-sakh/RS2022PRE/tree/audio-player)
+
+- ### Image gallery app (HTML, CSS, JS)
+
+  - [Deploy](https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/image-gallery/)
+  - [GitHub](https://github.com/Bumble-sakh/RS2022PRE/tree/image-gallery)
+
+- ### Tic-tac-toe game (HTML, CSS, JS)
+
+  - [Deploy](https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/tic-tac-toe/)
+  - [GitHub](https://github.com/Bumble-sakh/RS2022PRE/tree/tic-tac-toe)
+
+- ### Minesweeper game (HTML, CSS, JS)
+
+  - [Deploy](https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/minesweeper/)
+  - [GitHub](https://github.com/Bumble-sakh/RS2022PRE/tree/minesweeper)
+
+- ### Portfolio landing (HTML, CSS, JS)
+
+  - [Deploy](https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/portfolio/)
+  - [GitHub](https://github.com/Bumble-sakh/RS2022PRE/tree/portfolio)
 
 ---
 
@@ -89,6 +117,8 @@ During my life, I have tried many different areas of work. I worked as a video s
 - Moscow University for Industry and Finance "Synergy" (2016-2020)
 
 - [Udemy: Modern javascript from beginning](https://www.udemy.com/course/modern-javascript-from-beginning)
+
+- [RS School: JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/)
 
 ---
 
