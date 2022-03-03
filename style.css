@@ -33,14 +33,21 @@ body.dark-theme {
   margin: 2rem 0;
 }
 
+.swiper-wrapper {
+  align-items: center;
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .slide-img {
-  /* width: 50%; */
   margin: 0 4rem;
+}
+
+.slide-img img {
   border: 1px solid var(--footer-link);
   border-radius: 0.5rem;
 }
