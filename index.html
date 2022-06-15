@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Igor Asessorov</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-logo">
+          <h2>
+            <a href="#">Igor Asessorov</a>
+          </h2>
+          <div class="burger">
+            <i class="uil uil-bars"></i>
+          </div>
+        </div>
+        <nav>
+          <ul class="menu opened">
+            <li class="menu-item">
+              <a href="#about" class="menu-link">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="#skills" class="menu-link">Skills</a>
+            </li>
+            <li class="menu-item">
+              <a href="#code" class="menu-link">Code Example</a>
+            </li>
+            <li class="menu-item">
+              <a href="#experiance" class="menu-link">Experience</a>
+            </li>
+            <li class="menu-item">
+              <a href="#education" class="menu-link">Education</a>
+            </li>
+            <li class="menu-item">
+              <a href="#language" class="menu-link">Language skills</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contacts" class="menu-link">Contacts</a>
+            </li>
+            <li class="theme-toggle">
+              <i class="uil uil-moon" id="theme-btn"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="content-container">
+        <section class="home" id="home">
+          <div class="home-container">
+            <div class="home-info">
+              <h1 class="home-title">Hi, I'm Igor</h1>
+              <h2 class="home-subtitle">Junior frontend developer</h2>
+              <p class="home-description">
+                I'm a beginner frontend developer. At the moment I am studying
+                on the course "JavaScript/Front-end" by RS School. This CV is my
+                project.
+              </p>
+              <a href="#contacts" class="btn">
+                Contact me
+                <i class="uil uil-message btn-icon"></i>
+              </a>
+            </div>
+            <div class="home-photo"></div>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <div class="about-container">
+            <div class="about-img">
+              <img src="assets/img/photo.png" alt="Photo" />
+            </div>
+            <div class="about-content">
+              <h2 class="about-title">About me</h2>
+              <p class="about-description">
+                During my life, I have tried many different areas of work. I
+                worked as a video surveillance operator, sold plumbing fixtures,
+                was the manager of a small business center, and was engaged in
+                the advertising business. But I have always been interested in
+                IT. I tried different courses and stumbled upon RS-School by
+                accident. I want to get the maximum knowledge and experience
+                from this course. I am focused on achieving results and
+                developing my skills and abilities. And I want to finally try
+                myself in front-end development.
+              </p>
+              <a href="assets/cv.pdf" class="btn" download>
+                Download CV
+                <i class="uil uil-download-alt btn-icon"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills" id="skills">
+          <div class="skills-container">
+            <h2 class="skills-title">Skills</h2>
+
+            <ul class="skills-list">
+              <li class="skills-card">
+                <div class="card-title">
+                  <i class="uil uil-html5"></i>
+                  <p>HTML</p>
+                </div>
+                <div class="skills-progress">98%</div>
+              </li>
+              <li class="skills-card">
+                <div class="card-title">
+                  <i class="uil uil-css3-simple"></i>
+                  <p>CSS</p>
+                </div>
+                <div class="skills-progress">85%</div>
+              </li>
+              <li class="skills-card">
+                <div class="card-title">
+                  <i class="uil uil-java-script"></i>
+                  <p>JS</p>
+                </div>
+                <div class="skills-progress">65%</div>
+              </li>
+              <li class="skills-card">
+                <div class="card-title">
+                  <i class="uil uil-code-branch"></i>
+                  <p>GIT</p>
+                </div>
+                <div class="skills-progress">55%</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="code" id="code">
+          <div class="code-container code-spoiler-close">
+            <h2 class="code-title">Code example</h2>
+            <i class="uil uil-angle-down" id="code-spoiler"></i>
+            <div class="code-description">
+              <pre>
+                <code>
+    function customHttp() {
+      return {
+        get(url, cb) {
+          try {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', url);
+            xhr.send();
+
+            xhr.addEventListener('load', () => {
+              if(Math.floor(xhr.status / 100) !== 2) {
+                cb(`Error. Status code: ${xhr.status}`, xhr);
+                return ;
+              }
+              const response = JSON.parse(xhr.responseText);
+              cb(null, response);
+            });
+
+            xhr.addEventListener('error', () => {
+              cb(`Error. Status code: ${xhr.status}`, xhr);
+            });
+          } catch (error) {
+            cb(`Error. ${error}`);
+          }
+        },
+      }
+    }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="experience" id="experiance">
+          <div class="experience-container">
+            <h2 class="experience-title">Experience</h2>
+            <div class="experience-description">
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="assets/img/projects/avia.png"
+                        alt="Avia Tickets app Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">Avia Tickets app</h2>
+                      <p class="slide-subtitle">
+                        HTML, CSS, JS, Bootstrap, API
+                      </p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://bumble-sakh.github.io/Training-Avia-Tickets/dist/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/Training-Avia-Tickets"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="assets/img/projects/news.png"
+                        alt="News app Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">News app</h2>
+                      <p class="slide-subtitle">
+                        HTML, CSS, JS, Bootstrap, API
+                      </p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://bumble-sakh.github.io/Training-News-App/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/Training-News-App"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="assets/img/projects/todo.png"
+                        alt="ToDo app Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">ToDo app</h2>
+                      <p class="slide-subtitle">HTML, CSS, JS</p>
+                      <ul>
+                        <li>
+                          <a href="https://bumble-sakh.github.io/JS-ToDoList/">
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/Bumble-sakh/JS-ToDoList">
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="assets/img/projects/eco-sounds.jpg"
+                        alt="Eco sounds app Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">Eco sounds app</h2>
+                      <p class="slide-subtitle">HTML, CSS, JS</p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/eco-sounds/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/RS2022PRE/tree/eco-sounds"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="assets/img/projects/audio-player.jpg"
+                        alt="Audio player app Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">Audio player app</h2>
+                      <p class="slide-subtitle">HTML, CSS, JS</p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/audio-player/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/RS2022PRE/tree/audio-player"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="assets/img/projects/image-gallery.jpg"
+                        alt="Image gallery app Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">Image gallery app</h2>
+                      <p class="slide-subtitle">HTML, CSS, JS</p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/image-gallery/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/RS2022PRE/tree/image-gallery"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="assets/img/projects/tic-tac-toe.jpg"
+                        alt="Tic-tac-toe game Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">Tic-tac-toe game</h2>
+                      <p class="slide-subtitle">HTML, CSS, JS</p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/tic-tac-toe/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/RS2022PRE/tree/tic-tac-toe"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="assets/img/projects/minesweeper.jpg"
+                        alt="Minesweeper game Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">Minesweeper game</h2>
+                      <p class="slide-subtitle">HTML, CSS, JS</p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/minesweeper/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/RS2022PRE/tree/minesweeper"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        src="assets/img/projects/portfolio.jpg"
+                        alt="Portfolio landing Screenshot"
+                      />
+                    </div>
+                    <div class="slide-info">
+                      <h2 class="slide-title">Portfolio landing</h2>
+                      <p class="slide-subtitle">HTML, CSS, JS</p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://rolling-scopes-school.github.io/bumble-sakh-JSFEPRESCHOOL/portfolio/"
+                          >
+                            <i class="uil uil-globe"></i>
+                            Deploy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/Bumble-sakh/RS2022PRE/tree/portfolio"
+                          >
+                            <i class="uil uil-github-alt"></i>
+                            GitHub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="education" id="education">
+          <div class="education-container">
+            <h2 class="education-title">Education</h2>
+            <ul class="education-description">
+              <li class="education-item">
+                <i class="uil uil-cube"></i>
+                Moscow University for Industry and Finance “Synergy” (2016-2020)
+              </li>
+              <li class="education-item">
+                <i class="uil uil-cube"></i>
+                Udemy: Modern javascript from beginning
+              </li>
+              <li class="education-item">
+                <i class="uil uil-cube"></i>
+                RS School: JavaScript/Front-end. Stage 0
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="language" id="language">
+          <div class="language-container">
+            <h2 class="language-title">Language skills</h2>
+            <ul class="language-description">
+              <li class="language-item">
+                <i class="uil uil-cube"></i>
+                Russian - Native
+              </li>
+
+              <li class="language-item">
+                <i class="uil uil-cube"></i>
+                English - A1
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+          <div class="contacts-container">
+            <h2 class="contacts-title">Contacts</h2>
+            <ul class="contacts-description">
+              <li class="contacts-item">
+                <i class="uil uil-envelope"></i>
+                <a href="mailto:igor.asessorov@gmail.com"
+                  >igor.asessorov@gmail.com</a
+                >
+              </li>
+              <li class="contacts-item">
+                <i class="uil uil-phone"></i>
+                <a href="tel:+79242812565">+7(924)281-25-65</a>
+              </li>
+              <li class="contacts-item">
+                <i class="uil uil-whatsapp"></i>
+                <a href="https://wa.me/79242812565">+7(924)281-25-65</a>
+              </li>
+              <li class="contacts-item">
+                <i class="uil uil-telegram"></i>
+                <a href="https://t.me/Bumble_sakh">Bumble_sakh</a>
+              </li>
+              <li class="contacts-item">
+                <i class="uil uil-discord"></i>
+                <a href="https://discordapp.com/users/916565398521008158"
+                  >Bumble#7827</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <div class="footer-title">
+            <h2>Igor Asessorov</h2>
+            <a href="https://github.com/Bumble-sakh">
+              <i class="uil uil-github"></i>
+              Visited my GitHub
+            </a>
+          </div>
+          <div class="rsschool">
+            <a href="https://rs.school/js/">
+              <img src="assets/img/rs_school.svg" alt="RS School" />
+              Course «JavaScript/Front-end»
+            </a>
+          </div>
+        </div>
+        <p class="footer-copy">© Igor Asessorov 2021. All right reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
